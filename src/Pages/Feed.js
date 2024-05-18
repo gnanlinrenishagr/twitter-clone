@@ -1,13 +1,31 @@
+import "./Feed.css";
+import Post from "./Post";
+import TweetBox from "./TweetBox";
+import { Button } from "@mui/material";
+
 const Feed = () => {
   return (
-    <div>
+    <div className="feed">
       {/* Header */}
-      <h2>HOME</h2>
-      
-      {/* TweetBox */}
-      {/* Post */}
-    </div>
-  )
-}
+      <div className="feed__header">
+        <Button className="feed__button" fullWidth>
+          <h2>For you</h2>
+        </Button>
+        <Button className="feed__button" fullWidth>
+          <h2>Following</h2>
+        </Button>
+      </div>
 
-export default Feed
+      {/* TweetBox */}
+      <TweetBox />
+      {/* Post */}
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+    </div>
+  );
+};
+
+export default Feed;

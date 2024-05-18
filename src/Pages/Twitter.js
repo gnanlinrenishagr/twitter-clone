@@ -1,14 +1,14 @@
 import Feed from "./Feed";
 import Sidebar from "./Sidebar";
 import "./Twitter.css";
+import Widgets from "./Widgets";
+
 const Twitter = () => {
   return (
     <div className="twitter">
-      {/* Sidebar */}
       <Sidebar />
-      {/* Feed */}
       <Feed />
-      {/* Widgets */}
+      <Widgets />
     </div>
   );
 };

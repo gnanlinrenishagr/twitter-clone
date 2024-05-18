@@ -1,0 +1,41 @@
+.feed {
+  flex: 0.4;
+  border-right: 1px var(--twitter-color) solid;
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+.feed::-webkit-scrollbar {
+  display: none;
+}
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.feed__header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  border: 1px var(--twitter-color) solid;
+  /* padding: 15px 20px; */
+}
+
+.feed__button {
+  flex: 1 !important;
+  text-transform: none !important;
+  color: black !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.feed__button h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.feed__button:hover h2 {
+  font-weight: 700;
+}
