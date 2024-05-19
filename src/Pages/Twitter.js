@@ -1,7 +1,7 @@
-import Feed from "./Feed";
-import Sidebar from "./Sidebar";
+import Feed from "../components/Feed";
+import Sidebar from "../components/Sidebar";
 import "./Twitter.css";
-import Widgets from "./Widgets";
+import Widgets from "../components/Widgets";
 
 const Twitter = () => {
   return (

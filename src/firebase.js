@@ -1,4 +1,14 @@
-import firebase from "firebase";
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  doc,
+  updateDoc,
+  addDoc,
+  deleteDoc,
+} from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyASLZdSb146So4-FmL7bCCkenADsvmo5as",
   authDomain: "twitter-clone-4c6e1.firebaseapp.com",
@@ -8,8 +18,8 @@ const firebaseConfig = {
   appId: "1:267364014378:web:c246860acff3fc6bd96653",
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const firestore = getFirestore(app);
 
-const db = firebaseApp.firestore();
+export { firestore, collection, getDocs, doc, updateDoc, addDoc, deleteDoc };
 
-export default db;
